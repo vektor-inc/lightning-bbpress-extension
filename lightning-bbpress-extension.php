@@ -12,6 +12,13 @@
  * @package         Lightning_BBpress_Extension
  */
 
+ require 'inc/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/vektor-inc/lightning-bbpress-extension',
+	__FILE__, // Full path to the main plugin file or functions.php.
+	'lightning-bbpress-extension'
+);
+ $myUpdateChecker->setBranch( 'master' );
 
 /*-------------------------------------------*/
 /*  フォーラムのパンくずリスト書き換え
