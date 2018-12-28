@@ -12,21 +12,6 @@
  * @package         Lightning_BBpress_Extension
  */
 
- /*-------------------------------------------*/
- /*	デフォルトのパンくず非表示
- /*-------------------------------------------*/
-add_action( 'wp_head', 'ltg_bbp_css_override', 3 );
-function ltg_bbp_css_override() {
-	$options         = get_option( 'lightning_theme_options' );
-		$dynamic_css = '.bbp-breadcrumb { display:none; }';
-		// delete before after space
-		$dynamic_css = trim( $dynamic_css );
-		// convert tab and br to space
-		$dynamic_css = preg_replace( '/[\n\r\t]/', '', $dynamic_css );
-		// Change multiple spaces to single space
-		$dynamic_css = preg_replace( '/\s(?=\s)/', '', $dynamic_css );
-		wp_add_inline_style( 'lightning-design-style', $dynamic_css );
-}
 
 /*-------------------------------------------*/
 /*	フォーラムのパンくずリスト書き換え
