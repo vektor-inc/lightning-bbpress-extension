@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:     Lightning BBpress Extension
+ * Plugin Name:     Lightning bbPress Extension
  * Plugin URI:
  * Description:
  * Author:          Vektor,Inc.
@@ -14,7 +14,7 @@
 
 
 /*-------------------------------------------*/
-/*	フォーラムのパンくずリスト書き換え
+/*  フォーラムのパンくずリスト書き換え
 /*-------------------------------------------*/
 add_filter(
 	'lightning_panListHtml', function( $panListHtml ) {
