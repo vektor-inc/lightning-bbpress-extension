@@ -1,12 +1,34 @@
-
 {
   "name": "lightning-bbpress-extension",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "=== Lightning Bbpress Extension === Contributors: (this should be a list of wordpress.org userid's) Donate link: https://example.com/ Tags: comments, spam Requires at least: 4.5 Tested up to: 4.9.9 Stable tag: 0.1.2 License: GPLv2 or later License URI: https://www.gnu.org/licenses/gpl-2.0.html",
   "main": "Gruntfile.js",
-  "author": "YOUR NAME HERE",
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-wp-i18n": "~0.5.0",
-    "grunt-wp-readme-to-markdown": "~1.0.0"
-  }
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-replace": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vektor-inc/lightning-bbpress-extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vektor-inc/lightning-bbpress-extension/issues"
+  },
+  "homepage": "https://github.com/vektor-inc/lightning-bbpress-extension#readme"
 }
