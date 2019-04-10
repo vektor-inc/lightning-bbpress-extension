@@ -1,3 +1,37 @@
+
+/*-------------------------------------------*/
+/*	ソースコードがスクロールするように
+/*-------------------------------------------*/
+#bbpress-forums div.bbp-topic-content pre code,
+#bbpress-forums div.bbp-reply-content pre code {
+	white-space: pre;
+}
+
+/*-------------------------------------------*/
+/*	リンク設定ポップアップ修正
+/*-------------------------------------------*/
+#wp-link {
+	font-size:12px;
+	#link-selector {
+		#link-options {
+			padding-bottom:3px;
+			div label span {
+				width:140px;
+			}
+		}
+	}
+
+	input.form-control {
+		display: inline-block;
+		padding: 2px;
+		height:auto;
+	}
+}
+
+.has-text-field #wp-link #search-panel .query-results {
+	top:210px;
+}
+
 /*-------------------------------------------*/
 /*	デフォルトのパンくず非表示
 /*-------------------------------------------*/
