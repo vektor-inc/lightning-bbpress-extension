@@ -36,6 +36,7 @@
 /*	デフォルトのパンくず非表示
 /*-------------------------------------------*/
 .bbp-breadcrumb { display:none; }
+.subscription-toggle { margin-bottom: 1em; line-height: 1;}
 
 .bbpress,
 .forum-archive {
@@ -78,6 +79,14 @@ div.bbp-submit-wrapper {
 
 /*		bbpress widget
 /*-------------------------------------------*/
+#bbpress-forums {
+	.bbp-search-form {
+		margin-bottom:1em;
+	}
+}
+
+/*		bbpress widget
+/*-------------------------------------------*/
 .widget_display_views,
 .widget_display_forums,
 .widget_display_topics,
@@ -98,5 +107,26 @@ div.bbp-submit-wrapper {
 .widget_display_topics {
 	.bbp-forum-title {
 		display:block; overflow:hidden;
+	}
+}
+
+
+#bbpress-forums .ltg-bbp-content {
+	font-size:14px;
+	margin-bottom:1em;
+	border:1px solid #e5e5e5;
+	padding: 2em;
+	border-radius: 8px;
+	background-color: #f9f9f9;
+	h3 {
+		font-size:21px;
+		padding-bottom:4px;
+	}
+	ul {
+		padding-left:1.5em;
+		li {
+			list-style:disc;
+			line-height: 2;
+		}
 	}
 }
