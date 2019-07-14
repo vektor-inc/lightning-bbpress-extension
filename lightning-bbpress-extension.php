@@ -84,6 +84,9 @@ add_filter(
 /*  トピックの内容の前にトピックタイトル追加
 /*-------------------------------------------*/
 function ltg_bbp_add_topic_title() {
-	echo '<div><h2>' . get_the_title() . '</h2></div>';
+	$skin = get_option( 'lightning_design_skin' );
+	if ( $skin != 'Variety' ) {
+		echo '<div><h2>' . get_the_title() . '</h2></div>';
+	}
 }
 add_action( 'bbp_template_before_single_topic', 'ltg_bbp_add_topic_title' );
