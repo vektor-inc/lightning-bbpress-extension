@@ -79,3 +79,11 @@ add_filter(
 		return $panListHtml;
 	}
 );
+
+/*-------------------------------------------*/
+/*  トピックの内容の前にトピックタイトル追加
+/*-------------------------------------------*/
+function ltg_bbp_add_topic_title() {
+	echo '<div><h2>' . get_the_title() . '</h2></div>';
+}
+add_action( 'bbp_template_before_single_topic', 'ltg_bbp_add_topic_title' );
