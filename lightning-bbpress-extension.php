@@ -33,7 +33,7 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
   CSS読み込み
 /*-------------------------------------------*/
 function ltg_bbp_load_css() {
-	wp_enqueue_style( 'lightning-bbp-extension-style', plugin_dir_url( __FILE__ ) . 'css/style.css', array( 'lightning-theme-style' ), LTG_BBP_EXT_VERSION );
+	wp_enqueue_style( 'lightning-bbp-extension-style', plugin_dir_url( __FILE__ ) . 'css/style.css', array(), LTG_BBP_EXT_VERSION );
 }
 add_action( 'wp_enqueue_scripts', 'ltg_bbp_load_css' );
 
