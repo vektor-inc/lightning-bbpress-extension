@@ -7,7 +7,7 @@
  * Author URI:
  * Text Domain:     lightning-bbpress-extension
  * Domain Path:     /languages
- * Version:         0.1.7
+ * Version:         0.1.8
  *
  * @package         Lightning_BBpress_Extension
  */
