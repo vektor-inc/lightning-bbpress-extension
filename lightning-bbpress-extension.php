@@ -13,7 +13,8 @@
  */
 
 $data = get_file_data(
-	__FILE__, array(
+	__FILE__,
+	array(
 		'version'    => 'Version',
 		'textdomain' => 'Text Domain',
 	)
@@ -28,19 +29,20 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 );
  $myUpdateChecker->setBranch( 'master' );
 
-/*-------------------------------------------*/
-/*  CSS読み込み
+/*
+  CSS読み込み
 /*-------------------------------------------*/
 function ltg_bbp_load_css() {
 	wp_enqueue_style( 'lightning-bbp-extension-style', plugin_dir_url( __FILE__ ) . 'css/style.css', array( 'lightning-theme-style' ), LTG_BBP_EXT_VERSION );
 }
 add_action( 'wp_enqueue_scripts', 'ltg_bbp_load_css' );
 
-/*-------------------------------------------*/
-/*  フォーラムのパンくずリスト書き換え
+/*
+  フォーラムのパンくずリスト書き換え
 /*-------------------------------------------*/
 add_filter(
-	'lightning_panListHtml', function( $panListHtml ) {
+	'lightning_panListHtml',
+	function( $panListHtml ) {
 		if ( function_exists( 'bbp_get_forum_post_type' ) ) {
 			$postType = lightning_get_post_type();
 			if ( $postType['slug'] == 'topic' ) {
@@ -62,7 +64,7 @@ add_filter(
 </div>
 <!-- [ /.breadSection ] -->';
 
-				$args = array(
+				$args        = array(
 					// HTML
 					'before'         => $before_html,
 					'after'          => $after_html,
@@ -80,8 +82,8 @@ add_filter(
 	}
 );
 
-/*-------------------------------------------*/
-/*  トピックの内容の前にトピックタイトル追加
+/*
+  トピックの内容の前にトピックタイトル追加
 /*-------------------------------------------*/
 function ltg_bbp_add_topic_title() {
 	$skin = get_option( 'lightning_design_skin' );
