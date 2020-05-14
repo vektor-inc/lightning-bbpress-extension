@@ -146,6 +146,6 @@ div.bbp-submit-wrapper {
 }
 
 #bbpress-forums .bbp-pagination-links span.current {
-	background-color:var(--color-key);
+	background-color: var(--color-key, #c00);
 	color: #fff;
 }
